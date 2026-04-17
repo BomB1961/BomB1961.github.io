@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>최성영 — Unity Game Developer</title>
+  <meta name="description" content="Unity로 모바일·인디 게임을 만드는 최성영의 포트폴리오." />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/JetBrainsMono-Regular.css" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/design-tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#top" class="site-header__brand">SY.</a>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#github">GitHub</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__main">
+          <p class="hero__label">Unity Game Developer · Portfolio</p>
+          <h1 class="hero__name">최성영</h1>
+          <p class="hero__tagline">
+            Unity로 모바일 게임과 인디 게임을 만듭니다.<br />
+            혼자서 처음부터 끝까지 만들어 보는 과정에 재미를 느낍니다.
+          </p>
+        </div>
+        <aside class="hero__meta">
+          <dl>
+            <div>
+              <dt>Based in</dt>
+              <dd>Seoul, KR</dd>
+            </div>
+            <div>
+              <dt>Engine</dt>
+              <dd>Unity 2022.3 LTS</dd>
+            </div>
+            <div>
+              <dt>Contact</dt>
+              <dd><a href="mailto:uoujj5150@gmail.com">uoujj5150@gmail.com</a></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container about__inner">
+        <div class="about__head">
+          <p class="section-kicker">01 — About</p>
+          <h2 class="section-title">만드는 사람</h2>
+        </div>
+        <div class="about__body">
+          <p>
+            게임을 플레이하는 것보다 만드는 과정이 더 재미있다는 걸 깨닫고
+            Unity를 독학으로 시작했습니다. 지금은 모바일과 인디 규모의
+            게임을 1인 또는 소규모 팀으로 만들며, 기획부터 구현, 빌드까지
+            혼자 책임지는 작업을 주로 해왔습니다.
+          </p>
+          <p>
+            메인 스택은 Unity와 C#입니다. 게임플레이 로직을 구조적으로
+            짜는 일, 그리고 내가 만든 게임이 저사양 기기에서도 매끄럽게
+            돌아가게 만드는 일에 흥미가 있습니다. 아직 모르는 분야가
+            많지만, 필요한 걸 그때그때 배우면서 완성까지 끌고 가는
+            끈기는 있다고 생각합니다.
+          </p>
+          <p>
+            단순히 취업을 위한 결과물보다, 실제로 플레이해 볼 수 있는
+            게임을 꾸준히 내놓는 개발자가 되는 게 목표입니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="projects__head">
+          <p class="section-kicker">02 — Projects</p>
+          <h2 class="section-title">만든 것들</h2>
+          <p class="section-desc">
+            개인 프로젝트와 습작을 포함합니다. 최근 작업 순.
+          </p>
+        </div>
+        <div id="projects-list" class="projects__list" aria-live="polite">
+          <p class="loading">프로젝트를 불러오는 중…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Activity -->
+    <section id="github" class="github">
+      <div class="container">
+        <div class="github__head">
+          <p class="section-kicker">03 — GitHub Activity</p>
+          <h2 class="section-title">저장소</h2>
+          <p class="section-desc">
+            공개 저장소 목록. 최근 업데이트 순으로 정렬됩니다.
+          </p>
+        </div>
+        <div id="repos-list" class="github__list" aria-live="polite">
+          <p class="loading">저장소를 불러오는 중…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="skills__head">
+          <p class="section-kicker">04 — Skills</p>
+          <h2 class="section-title">다룰 수 있는 것</h2>
+        </div>
+        <div class="skills__body">
+          <div class="skills__group">
+            <h3>Engine &amp; Language</h3>
+            <ul class="tag-list">
+              <li>Unity 2022 LTS</li>
+              <li>C#</li>
+              <li>Unity Editor Scripting</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Gameplay</h3>
+            <ul class="tag-list">
+              <li>상태 머신</li>
+              <li>이벤트 기반 설계</li>
+              <li>오브젝트 풀링</li>
+              <li>UGUI</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Build &amp; Platform</h3>
+            <ul class="tag-list">
+              <li>Android 빌드</li>
+              <li>iOS 빌드 경험</li>
+              <li>Player Settings 설정</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Tools</h3>
+            <ul class="tag-list">
+              <li>Git / GitHub</li>
+              <li>Visual Studio</li>
+              <li>Rider (trial)</li>
+              <li>Aseprite (기초)</li>
+            </ul>
+          </div>
+          <p class="skills__note">
+            * 학습 중인 항목: URP, Shader Graph, Addressables, DOTween.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container contact__inner">
+        <p class="section-kicker">05 — Contact</p>
+        <h2 class="section-title">연락</h2>
+        <ul class="contact__list">
+          <li>
+            <span class="contact__label">Email</span>
+            <a href="mailto:uoujj5150@gmail.com">uoujj5150@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact__label">GitHub</span>
+            <a href="https://github.com/BomB1961" target="_blank" rel="noopener">github.com/BomB1961</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span id="year">2026</span> 최성영</p>
+      <p class="site-footer__meta">Built with HTML, CSS, JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/render-projects.js"></script>
+  <script src="js/render-repos.js"></script>
+</body>
+</html>

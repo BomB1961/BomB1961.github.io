@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "project-alpha",
+    "title": "프로젝트 알파",
+    "role": "1인 개발",
+    "engine": "Unity 2022.3 LTS",
+    "platform": ["Android"],
+    "genre": "캐주얼 퍼즐",
+    "period": "2024.03 - 2024.08",
+    "thumbnail": "",
+    "video": "",
+    "playable": "",
+    "github": "https://github.com/BomB1961",
+    "stores": { "google_play": "", "app_store": "" },
+    "summary": "한 줄 요약을 여기에 적습니다. 어떤 게임이고, 핵심 재미가 무엇인지.",
+    "contributions": [
+      "게임 전체 설계 및 C# 스크립팅",
+      "UGUI 기반 메뉴·HUD 구현",
+      "Android 빌드 및 스토어 제출까지 1인 진행"
+    ],
+    "tech": ["C#", "Unity", "UGUI"]
+  },
+  {
+    "slug": "project-beta",
+    "title": "프로젝트 베타",
+    "role": "1인 개발",
+    "engine": "Unity 2022.3 LTS",
+    "platform": ["PC"],
+    "genre": "탑다운 액션",
+    "period": "2023.09 - 2024.01",
+    "thumbnail": "",
+    "video": "",
+    "playable": "",
+    "github": "https://github.com/BomB1961",
+    "stores": { "google_play": "", "app_store": "" },
+    "summary": "한 줄 요약을 여기에 적습니다.",
+    "contributions": [
+      "플레이어 이동·공격·피격 상태 머신 구현",
+      "간단한 적 AI (순찰 → 추격 → 공격) 제작",
+      "오브젝트 풀링으로 투사체 메모리 관리"
+    ],
+    "tech": ["C#", "Unity", "FSM"]
+  },
+  {
+    "slug": "project-gamma",
+    "title": "프로젝트 감마",
+    "role": "개인 학습 프로젝트",
+    "engine": "Unity 2022.3 LTS",
+    "platform": ["PC"],
+    "genre": "프로토타입",
+    "period": "2023.05 - 2023.07",
+    "thumbnail": "",
+    "video": "",
+    "playable": "",
+    "github": "https://github.com/BomB1961",
+    "stores": { "google_play": "", "app_store": "" },
+    "summary": "한 줄 요약을 여기에 적습니다.",
+    "contributions": [
+      "Unity 기본기 학습 목적의 클론 프로젝트",
+      "튜토리얼을 따라가며 구조를 재해석하여 재작성",
+      "완성은 아니지만 빌드 가능한 수준까지 도달"
+    ],
+    "tech": ["C#", "Unity"]
+  }
+]
