@@ -17,7 +17,7 @@ const fs = require('fs');
 const path = require('path');
 
 const USERNAME = 'BomB1961';
-const OUTPUT = path.join(__dirname, '..', 'docs', 'data', 'repos.json');
+const OUTPUT = path.join(__dirname, '..', 'data', 'repos.json');
 
 // ▼ 상단에 고정하고 싶은 저장소 이름을 정확히 적어주세요. 대소문자 주의.
 // 예) const PINNED_REPOS = ['my-game-project', 'unity-shader-study'];

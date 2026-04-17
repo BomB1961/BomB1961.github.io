@@ -27,9 +27,9 @@ Unity 게임 개발자 포트폴리오 웹사이트입니다. 순수 HTML·CSS·
 
 1. 저장소 페이지의 `Settings` → 좌측 `Pages` 메뉴로 이동합니다.
 2. `Source` 항목에서 `Deploy from a branch` 선택.
-3. `Branch` 를 `main` 으로, 폴더를 `/docs` 로 선택합니다.
+3. `Branch` 를 `main` 으로, 폴더를 `/ (root)` 로 선택합니다.
 4. `Save` 클릭.
-5. 1~2분 뒤 화면 상단에 공개 주소가 표시됩니다 (예: `https://BomB1961.github.io/portfolio/`).
+5. 1~2분 뒤 화면 상단에 공개 주소가 표시됩니다 (예: `https://BomB1961.github.io/`).
 
 ---
 
@@ -47,7 +47,7 @@ Unity 게임 개발자 포트폴리오 웹사이트입니다. 순수 HTML·CSS·
    ```
    node scripts/fetch-repos.js
    ```
-4. `docs/data/repos.json` 파일이 자동으로 업데이트됩니다.
+4. `data/repos.json` 파일이 자동으로 업데이트됩니다.
 5. GitHub Desktop으로 변경사항을 커밋하고 push 합니다.
 
 ### 특정 저장소를 상단에 고정(Pinned)하고 싶다면
@@ -63,7 +63,7 @@ Unity 게임 개발자 포트폴리오 웹사이트입니다. 순수 HTML·CSS·
 ## 프로젝트 내용 수정하는 법
 
 ### 대표 프로젝트(게임) 수정
-`docs/data/projects.json` 파일을 열어서 내용을 바꾸세요. 항목별 설명은 다음과 같습니다.
+`data/projects.json` 파일을 열어서 내용을 바꾸세요. 항목별 설명은 다음과 같습니다.
 
 - `title`: 게임 제목
 - `role`: 본인 역할 (예: "1인 개발", "팀 프로젝트 - 프로그래밍 담당")
@@ -71,7 +71,7 @@ Unity 게임 개발자 포트폴리오 웹사이트입니다. 순수 HTML·CSS·
 - `platform`: 플랫폼 배열 (예: `["Android", "iOS"]`)
 - `genre`: 장르
 - `period`: 개발 기간 (예: "2024.03 - 2024.08")
-- `thumbnail`: 썸네일 이미지 경로. `docs/assets/projects/` 폴더에 이미지를 넣고 그 경로를 적으세요. (예: `"assets/projects/alpha/thumb.jpg"`)
+- `thumbnail`: 썸네일 이미지 경로. `assets/projects/` 폴더에 이미지를 넣고 그 경로를 적으세요. (예: `"assets/projects/alpha/thumb.jpg"`)
 - `video`: 유튜브 영상 링크 (없으면 빈 문자열 `""`)
 - `playable`: 웹 플레이 가능 링크 (itch.io, WebGL 빌드 등)
 - `github`: 저장소 링크
@@ -81,13 +81,13 @@ Unity 게임 개발자 포트폴리오 웹사이트입니다. 순수 HTML·CSS·
 - `tech`: 사용한 기술 태그 배열
 
 ### 자기소개 글 수정
-`docs/index.html` 파일에서 `<!-- About -->` 부분을 찾아 `<p>` 태그 안의 텍스트를 수정하세요.
+`index.html` 파일에서 `<!-- About -->` 부분을 찾아 `<p>` 태그 안의 텍스트를 수정하세요.
 
 ### 스킬 목록 수정
-`docs/index.html` 파일에서 `<!-- Skills -->` 부분을 찾아 `<li>` 항목들을 수정하세요.
+`index.html` 파일에서 `<!-- Skills -->` 부분을 찾아 `<li>` 항목들을 수정하세요.
 
 ### 이메일 주소 수정
-`docs/index.html` 파일에서 `uoujj5150@gmail.com` 을 찾아 본인 이메일로 바꾸세요. (여러 군데에 있으니 전부 바꿔야 합니다)
+`index.html` 파일에서 `uoujj5150@gmail.com` 을 찾아 본인 이메일로 바꾸세요. (여러 군데에 있으니 전부 바꿔야 합니다)
 
 ---
 
@@ -96,13 +96,13 @@ Unity 게임 개발자 포트폴리오 웹사이트입니다. 순수 HTML·CSS·
 파일을 바로 열면 `data/projects.json` 같은 파일 로딩이 실패합니다. 간단한 로컬 서버가 필요합니다.
 
 **Python이 설치되어 있다면 (가장 쉬움)**
-1. 터미널에서 `docs` 폴더로 이동: `cd docs`
+1. 터미널에서 프로젝트 루트로 이동합니다.
 2. 명령 실행: `python -m http.server 8080`
 3. 브라우저에서 `http://localhost:8080` 접속.
 
 **VS Code 사용자**
 1. VS Code 확장 프로그램 `Live Server` 설치.
-2. `docs/index.html` 우클릭 → `Open with Live Server`.
+2. `index.html` 우클릭 → `Open with Live Server`.
 
 ---
 
@@ -110,15 +110,14 @@ Unity 게임 개발자 포트폴리오 웹사이트입니다. 순수 HTML·CSS·
 
 ```
 portfolio/
-├── docs/                      ← GitHub Pages가 이 폴더를 웹으로 공개
-│   ├── index.html            ← 메인 페이지
-│   ├── .nojekyll             ← Jekyll 처리 방지용 빈 파일 (건드리지 마세요)
-│   ├── css/                  ← 스타일
-│   ├── js/                   ← 동작 스크립트
-│   ├── data/                 ← 프로젝트·저장소 데이터
-│   │   ├── projects.json    ← 게임 프로젝트 목록 (직접 수정)
-│   │   └── repos.json       ← GitHub 저장소 (스크립트가 자동 생성)
-│   └── assets/               ← 이미지 저장 위치
+├── index.html                ← 메인 페이지
+├── .nojekyll                 ← Jekyll 처리 방지용 빈 파일 (건드리지 마세요)
+├── css/                      ← 스타일
+├── js/                       ← 동작 스크립트
+├── data/                     ← 프로젝트·저장소 데이터
+│   ├── projects.json        ← 게임 프로젝트 목록 (직접 수정)
+│   └── repos.json           ← GitHub 저장소 (스크립트가 자동 생성)
+├── assets/                   ← 이미지 저장 위치
 ├── scripts/
 │   └── fetch-repos.js       ← GitHub API에서 저장소 가져오는 스크립트
 ├── claude.md                 ← AI 수정 요청 시 참고용 규칙 파일
@@ -130,17 +129,17 @@ portfolio/
 ## 문제 해결
 
 **Q. 웹사이트 주소에 접속했는데 404 에러가 납니다.**
-- GitHub Pages 설정이 `main` 브랜치의 `/docs` 폴더로 되어 있는지 확인하세요.
+- GitHub Pages 설정이 `main` 브랜치의 `/ (root)` 폴더로 되어 있는지 확인하세요.
 - 설정 후 1~2분 기다린 뒤 새로고침 해 보세요.
 
 **Q. 저장소 섹션이 계속 "데이터가 비어 있습니다"로 나옵니다.**
 - `node scripts/fetch-repos.js` 를 실행했는지 확인하세요.
-- 실행 후 `docs/data/repos.json` 파일이 빈 배열(`[]`)이 아닌지 확인.
+- 실행 후 `data/repos.json` 파일이 빈 배열(`[]`)이 아닌지 확인.
 - 변경사항을 GitHub에 push 했는지 확인.
 
 **Q. 스타일이 깨져 보입니다.**
 - 브라우저 캐시 문제일 수 있습니다. `Ctrl + Shift + R` (Mac은 `Cmd + Shift + R`)로 강제 새로고침.
 
 **Q. 이미지가 안 나옵니다.**
-- `docs/assets/projects/` 폴더 안에 이미지 파일이 실제로 있는지 확인.
+- `assets/projects/` 폴더 안에 이미지 파일이 실제로 있는지 확인.
 - `projects.json` 의 `thumbnail` 경로가 정확한지 확인 (대소문자 구분됨).
